@@ -7,6 +7,7 @@ Features
 --------
 
 * An easy to learn visual programming language to program microcontrollers
+
 * Multithreading
 * Graphical dialog for pins configuration 
 * Load and save operations
@@ -14,6 +15,14 @@ Features
 * Server side is written in Python
 * You can teach you children to program cool staff with mouse only
 
+### Blink
+![Blink](https://raw.github.com/admitrievsky/blockduino/master/README.md.images/blink.png)
+
+#Wiring panel
+![Wiring panel](https://raw.github.com/admitrievsky/blockduino/master/README.md.images/blockduino.png)
+
+### Multithreading
+![Multithreading](https://github.com/admitrievsky/blockduino/blob/master/README.md.images/mt.png)
 
 Current board support
 ----------------------
