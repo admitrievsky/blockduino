@@ -9,7 +9,7 @@ Features
 * An easy to learn visual programming language to program microcontrollers
 
 * Multithreading
-* Graphical dialog for pins configuration 
+* A graphical dialog for pins configuration 
 * Load and save operations
 * The servo library wastes only one timer
 * Server side is written in Python
@@ -34,7 +34,17 @@ Installation
 
 You will need the following packages: gcc-avr, dfu-programmer. So:
 
-sudo apt-get install gcc-avr binutils-avr avr-libc dfu-programmer
+ sudo apt-get install gcc-avr binutils-avr avr-libc dfu-programmer
+
+To start server cd into the Blockduino folder and issue the command
+
+ python app.py
+
+Point your browser to http://localhost:8000/ and have a fun!
+
+Tested with Chromium browser.
+
+Sketches are saved into ~/blockly-sketchbook folder.
 
 Operation
 ---------
