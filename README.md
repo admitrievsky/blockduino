@@ -62,3 +62,4 @@ TODO
 * Restore Lists and Strings sections.
 * Code clean
 * Add some libraries
+* Windows port
