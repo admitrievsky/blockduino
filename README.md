@@ -22,7 +22,7 @@ Features
 ![Wiring panel](https://raw.github.com/admitrievsky/blockduino/master/README.md.images/blockduino.png)
 
 ### Multithreading
-![Multithreading](https://github.com/admitrievsky/blockduino/blob/master/README.md.images/mt.png)
+![Multithreading](https://raw.github.com/admitrievsky/blockduino/master/README.md.images/mt.png)
 
 Current board support
 ----------------------
