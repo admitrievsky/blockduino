@@ -13,7 +13,7 @@ Features
 * Load and save operations
 * The servo library wastes only one timer
 * Server side is written in Python
-* You can teach you children to program cool staff with mouse only
+* You can teach your children to program cool staff with mouse only
 
 ### Blink
 ![Blink](https://raw.github.com/admitrievsky/blockduino/master/README.md.images/blink.png)
