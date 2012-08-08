@@ -1,0 +1,7 @@
+repo: 5babd270867b2fc3f541f787f0dca1a722cdd24c
+node: 42172f917c3f9624e8e8b023733669a8d1793387
+branch: default
+latesttag: PUBLISH_DSPIC_HELPER_V1_0
+latesttag: PUBLISH_DSPIC_THREADS_V1_0
+latesttag: RELEASE_1_02
+latesttagdistance: 1

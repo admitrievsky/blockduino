@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/261/trunk/language/en
+END
+text.js
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/261/trunk/language/en/text.js
+END
+_messages.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/221/trunk/language/en/_messages.js
+END
+variables.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/258/trunk/language/en/variables.js
+END
+math.js
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/258/trunk/language/en/math.js
+END
+procedures.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/258/trunk/language/en/procedures.js
+END
+logic.js
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/258/trunk/language/en/logic.js
+END
+lists.js
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/258/trunk/language/en/lists.js
+END
+control.js
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/258/trunk/language/en/control.js
+END

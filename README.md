@@ -60,3 +60,5 @@ TODO
 * Correct spelling. I can see my English skills.
 * Make Math section to work.
 * Restore Lists and Strings sections.
+* Code clean
+* Add some libraries

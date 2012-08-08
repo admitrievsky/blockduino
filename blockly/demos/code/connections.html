@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blockly Demo: Code</title>
+
+  <style>
+    html, body {
+      background-color: #fff;
+      margin: 0;
+      padding:0;
+    }
+    div {
+      margin: 10px;
+    }
+    select {
+      position: absolute;
+      left: 80px;
+    }
+    input.pin-name {
+      position: absolute;
+      left: 200px;
+    }
+  </style>
+  <script>
+    var Blockly;
+
+    function init() {
+      var button = document.createElement('input');
+      button.type = 'submit';
+      button.value = 'Save';
+      button.onclick = function()
+      {
+        for(var i=0; i<16; i++){
+          var sel = document.getElementById('pin-select-' + i);
+          var opts = sel.options;
+          Blockly.mainWorkspace.wiring[i] = {
+            type: opts[sel.selectedIndex].name,
+            name: document.getElementById('pin-name-' + i).value
+          };
+        }
+        Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+      }
+      document.body.appendChild(button);
+
+
+      for(var i=0; i<16; i++){
+        var div = document.createElement('div');
+        div.id = 'pin-div-' + i;
+        var label = document.createElement('label');
+        label.innerHTML = 'Pin #' + i;
+        label.setAttribute('for', 'pin-select-' + i);
+        div.appendChild(label);
+
+        var select = document.createElement('select');
+        select.name = select.id = 'pin-select-' + i;
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = '---';
+        select.appendChild(option);
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = 'input';
+        select.appendChild(option);
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = 'output';
+        select.appendChild(option);
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = 'led';
+        select.appendChild(option);
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = 'servo';
+        select.appendChild(option);
+
+        var option = document.createElement('option');
+        option.innerHTML = option.name = 'optocoupler';
+        select.appendChild(option);
+
+        div.appendChild(select);
+
+        var input = document.createElement('input');
+        input.id = input.name = 'pin-name-' + i;
+        input.className = 'pin-name';
+        div.appendChild(input);
+
+        document.body.appendChild(div);
+      }
+    }
+
+    function update(b){
+      Blockly = b;
+      for(var i=0; i<16; i++)
+        document.getElementById('pin-select-' + i).selectedIndex = 0;
+      for(var x in Blockly.mainWorkspace.wiring){
+        var sel = document.getElementById('pin-select-' + x);
+        var opts = sel.options;
+        for(var i=0; i<opts.length; i++){
+          if(opts[i].name == Blockly.mainWorkspace.wiring[x].type)
+            sel.selectedIndex = i;
+        }
+        document.getElementById('pin-name-' + x).value = Blockly.mainWorkspace.wiring[x].name;
+      }
+    }
+  </script>
+</head>
+<body onload="init()">
+</body>
+</html>
